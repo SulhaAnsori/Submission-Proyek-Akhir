@@ -1,0 +1,67 @@
+@media screen and (min-width: 650px) {
+  #menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav__list {
+    width: 100vw;
+    transition: all 1.5s ease-out;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .open {
+    height: 180px;
+  }
+
+  .nav__item {
+    display: block;
+    width: 100%;
+  }
+
+  .nav__item a {
+    width: 100%;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .post-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .name_restaurant {
+    font-size: 18px;
+  }
+
+  .rating_restaurant {
+    font-size: 18px;
+  }
+
+  .city_restaurant {
+    font-size: 18px;
+  }
+
+  .post-item__description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .content {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 24px;
+    column-gap: 16px;
+  }
+}
+
+@media screen and (min-width: 899px) {
+  .content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
